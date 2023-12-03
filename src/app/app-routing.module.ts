@@ -7,11 +7,15 @@ import { DeleteUserComponent } from './users/delete-user/delete-user.component';
 import { EditUserComponent } from './users/edit-user/edit-user.component';
 
 const routes: Routes = [
-  {path: 'create', component: AddUserComponent},
-  {path: 'view/:id', component: ViewUsersComponent},
-  {path: 'list', component: ListUsersComponent},
-  {path: 'delete/:id', component: DeleteUserComponent},
-  {path: 'edit/:id', component: EditUserComponent}
+    
+  {path: 'users', children:[
+    {path: '', component: ListUsersComponent},
+    {path: 'list', component: ListUsersComponent},
+    {path: 'view/:id', component: ViewUsersComponent},
+    {path: 'delete/:id', component: DeleteUserComponent},
+    {path: 'edit/:id', component: EditUserComponent},
+    {path: 'create', component: AddUserComponent}
+  ] }
 ];
 
 @NgModule({

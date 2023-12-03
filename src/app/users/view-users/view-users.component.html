@@ -1,1 +1,12 @@
-<p>view-users works!</p>
+<mat-card *ngIf="userDetails" class="user-details">
+    <mat-card-title> {{userDetails.name}} </mat-card-title>
+    <mat-card-content>
+        <span class="username">{{userDetails.email}}</span>
+    </mat-card-content>
+    <mat-card-actions> 
+
+     <a class="action-link" [routerLink]="['/users/view', userDetails.id]">view</a>
+    | <a class="action-link" [routerLink]="['/users/edit', userDetails.id]">Edit</a>
+    | <a class="action-link" [routerLink]="['/users/delete', userDetails.id]">Delete</a>
+    </mat-card-actions>
+</mat-card>

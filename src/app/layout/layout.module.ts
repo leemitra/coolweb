@@ -19,7 +19,7 @@ import {MatListModule} from '@angular/material/list';
     MatToolbarModule,
     MatIconModule,
     MatListModule
-  ], 
+    ],
   exports:[
     HeaderComponent,
     SidebarComponent,

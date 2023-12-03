@@ -1,0 +1,19 @@
+.username {
+    min-width: 300px;
+}
+
+.idspan {
+    min-width: 300px;
+}
+
+.action-link {
+    padding: 10px;
+}
+
+.main-content {
+    margin-left: 50px;
+}
+
+.list-users {
+    margin: 20px;
+}
